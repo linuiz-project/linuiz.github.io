@@ -1,6 +1,6 @@
 +++
 draft = true
-title = "{{ replace .Name '-' ' ' | title }}"
+title = "{{ replace .Name '-' ' ' }}"
 date = "{{ now.Year }}"
 menu = "main"
 +++

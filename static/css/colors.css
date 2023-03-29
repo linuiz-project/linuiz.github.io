@@ -15,6 +15,14 @@
     color: inherit;
 }
 
-.bg-accent-fill {
+svg.bg-accent {
     fill: var(--bg-accent);
+}
+
+.bg-accent {
+    color: var(--bg-accent);
+}
+
+.fg-bold {
+    color: var(--fg-bold);
 }

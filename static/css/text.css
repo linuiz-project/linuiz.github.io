@@ -1,5 +1,10 @@
 @import "colors.css";
 
+:root {
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+}
+
 .text {
     color: var(--text);
 }

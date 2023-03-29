@@ -17,3 +17,11 @@ a.bg-link {
 a.bg-link:hover {
     color: var(--text-accent);
 }
+
+a.img-link {
+    background-color: var(--bg-accent);
+}
+
+a.img-link:hover {
+    background-color: var(--text-accent);
+}

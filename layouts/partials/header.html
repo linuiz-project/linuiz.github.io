@@ -1,26 +1,32 @@
 <nav class="w-100" role="navigation">
-    <div style="height: 1.5rem; padding: 0 0.25rem;" class="lr-center flex-ns flex-wrap flex-center justify-start">
+    <div style="margin: 0 0.25rem; height: 1.5rem;" class="lr-center flex-ns flex-wrap flex-center justify-start">
         <!-- site header / name -->
-        <h1 class="dib ma0 fg-bold">{{ .Site.Title }}</h1>
+        <div class="dib h-100 ma0 inline-svg fg-bold">
+            {{ partial "images/fire.html" }}
+        </div>
 
         <span class="bg-text">&emsp;|&emsp;</span>
 
+        <!-- menu items -->
         <ul class="ma0 pa0 inline-ul bare-list">
-            <!-- menu items -->
             {{ range site.Menus.main.ByWeight }}
             <li role="menuitem">
-                <a href="{{ absURL .URL }}">{{ .Title }}</a>
+                <a href="{{ absLangURL .URL }}" tabindex="{{ .Weight }}">{{ .Title }}</a>
             </li>
             {{ end }}
-
-            <!-- social links -->
-            <li>
-                {{ partial "links/github.html" }}
-            </li>
-
-            <li>
-                {{ partial "links/patreon.html" }}
-            </li>
         </ul>
+
+        <!-- social links -->
+        <div class="dib h-100 mauto-left">
+            <a class="dib h-100 inline-svg bg-accent" href="https://github.com/pyre-project" target="_blank"
+                tabindex="100">
+                {{ partial "images/github.html" }}
+            </a>
+
+            <a class="dib h-100 inline-svg img-link" href="https://www.patreon.com/PyreProject" target="_blank"
+                tabindex="101">
+                {{ partial "images/patreon.html" }}
+            </a>
+        </div>
     </div>
 </nav>
