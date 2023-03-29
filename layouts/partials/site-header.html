@@ -1,9 +1,21 @@
-<div>
-    <ul style="list-style-type: none;">
-        {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Title}}</a>
-        </li>
-        {{ end }}
-    </ul>
-</div>
+<nav class="w-100 sgl-space" role="navigation">
+    <div style="height: 1.5rem" class="lr-center flex-ns flex-wrap flex-center">
+        <ul class="ma0 pa0 bare-list justify-start">
+            {{ range .Pages }}
+            <li class="dib mali2-right" role="menuitem">
+                <a href="{{.Permalink}}">{{.Title}}</a>
+            </li>
+            {{ end }}
+        </ul>
+
+        <div class="wrapper justify-end">
+            <a class="dib mali2-left" href="https://www.patreon.com/bePatron?u=91044262" role="link">
+                <img src="/images/logos/patreon.svg" alt="Patreon" title="Support on Patreon!" class="inline-svg" />
+            </a>
+
+            <a class="dib mali2-left" href="https://www.github.com/pyre-project/" role="link">
+                <img src="/images/logos/github.svg" alt="GitHub" title="GitHub repository" class="inline-svg" />
+            </a>
+        </div>
+    </div>
+</nav>

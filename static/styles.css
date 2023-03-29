@@ -1,0 +1,77 @@
+.w-100 {
+    width: 100%;
+}
+
+.ma0 {
+    margin: 0;
+}
+
+.pa0 {
+    padding: 0;
+}
+
+.mali2-right {
+    margin-right: 2rem;
+}
+
+.mali2-left {
+    margin-left: 2rem;
+}
+
+.sgl-space {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dbl-space {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.lr-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.flex-ns {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+
+
+.bare-list {
+    list-style-type: none;
+}
+
+.inline-svg {
+    width: auto;
+    height: 100%;
+}
+
+.wrapper {
+    display: contents;
+}
