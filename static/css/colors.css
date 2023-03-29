@@ -1,0 +1,20 @@
+:root {
+    --bg: #313638;
+    --bg-accent: #667176;
+    --fg: #F09D51;
+    --fg-bold: #F06543;
+    --text: #E8E9EB;
+    --text-accent: #E0DFD5;
+}
+
+.fill-current {
+    fill: currentColor;
+}
+
+.inherit-color {
+    color: inherit;
+}
+
+.bg-accent-fill {
+    fill: var(--bg-accent);
+}

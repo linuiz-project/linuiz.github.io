@@ -1,0 +1,19 @@
+@import "colors.css";
+
+.text {
+    color: var(--text);
+}
+
+.bg-text {
+    color: var(--bg-accent);
+}
+
+.fg-text {
+    color: var(--fg);
+    text-shadow: #1a1a1a 1px 1px 0;
+}
+
+.fg-bold {
+    color: var(--fg-bold);
+    text-shadow: #1a1a1a 1px 1px 0;
+}

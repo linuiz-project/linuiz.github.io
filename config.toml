@@ -1,3 +1,4 @@
 baseURL = "https://pyre-project.org/"
 languageCode = "en-us"
 title = "Pyre Project"
+copyright = "Copyright {year} @ Pyre Project. All rights reserved."

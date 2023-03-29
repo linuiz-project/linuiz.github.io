@@ -1,8 +1,8 @@
 +++
 draft = true
-title = "About"
+title = "Wiki"
 date = "2023"
 menu = "main"
-weight = 9
+weight = 8
 +++
 

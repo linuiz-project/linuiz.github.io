@@ -1,7 +1,8 @@
 +++
-title = "News"
-date = '2023'
 draft = true
+title = "News"
+date = "2023"
+menu = "main"
+weight = 2
 +++
 
-news page

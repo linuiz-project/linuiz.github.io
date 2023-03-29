@@ -1,8 +1,19 @@
+@import "colors.css";
+
 a {
-    color: var(--text);
+    color: var(--fg);
     text-decoration: none;
 }
 
 a:hover {
+    color: var(--text-accent);
+}
+
+a.bg-link {
+    color: var(--bg-accent);
+    text-decoration: underline;
+}
+
+a.bg-link:hover {
     color: var(--text-accent);
 }

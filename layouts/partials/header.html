@@ -1,0 +1,26 @@
+<nav class="w-100" role="navigation">
+    <div style="height: 1.5rem; padding: 0 0.25rem;" class="lr-center flex-ns flex-wrap flex-center justify-start">
+        <!-- site header / name -->
+        <h1 class="dib ma0 fg-bold">{{ .Site.Title }}</h1>
+
+        <span class="bg-text">&emsp;|&emsp;</span>
+
+        <ul class="ma0 pa0 inline-ul bare-list">
+            <!-- menu items -->
+            {{ range site.Menus.main.ByWeight }}
+            <li role="menuitem">
+                <a href="{{ absURL .URL }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+
+            <!-- social links -->
+            <li>
+                {{ partial "links/github.html" }}
+            </li>
+
+            <li>
+                {{ partial "links/patreon.html" }}
+            </li>
+        </ul>
+    </div>
+</nav>

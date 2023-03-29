@@ -1,13 +1,10 @@
+@import "colors.css";
 @import "links.css";
+@import "text.css";
 
 :root {
-    --bg: #313638;
-    --fg: #F09D51;
-    --fg-accent: #F06543;
-    --text: #E0DFD5;
-    --text-accent: #E8E9EB;
-
     font-family: Verdana, sans-serif;
+    font-size: 2vmax;
 }
 
 .w-100 {
@@ -73,6 +70,14 @@
     justify-content: end;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.v-base {
+    vertical-align: baseline;
+}
+
 .bare-list {
     list-style-type: none;
 }
@@ -91,16 +96,14 @@
     display: contents;
 }
 
-.nav * {
-    color: var(--fg);
-    text-shadow: #1a1a1a 1px 1px 0;
+.inline-ul {
+    display: contents;
 }
 
-.nav-lis>li {
+.inline-ul>li {
     display: inline-block;
-    margin-right: 1.25rem;
 }
 
-.inherit-color {
-    color: inherit;
+.inline-ul>li+li {
+    margin-left: 1.25rem;
 }
