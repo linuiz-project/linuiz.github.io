@@ -1,32 +1,48 @@
-<nav class="w-100" role="navigation">
-    <div style="margin: 0 0.25rem; height: 1.5rem;" class="lr-center flex-ns flex-wrap flex-center justify-start">
-        <!-- site header / name -->
-        <div class="dib h-100 ma0 inline-svg fg-bold">
-            {{ partial "images/fire.html" }}
-        </div>
+<!-- patreon / github img links -->
+<div class="fixed" style="top: 0.5rem; right: 0.5rem; height: var(--h2-size);">
+    <div class="inline-svg bg-accent">
+        {{ partial "images/github.html" }}
+    </div>
+</div>
 
-        <span class="bg-text">&emsp;|&emsp;</span>
+
+<!-- primary header -->
+<div class="flex flex-center justify-center fg-bold" style="height: var(--h1-size);">
+    <div class="dib autosize-svg">
+        {{ partial "images/fire.html"}}
+    </div>
+    <h1 class="dib" style="padding-top: 1.15rem; font-size: var(--h1-size);">
+        Pyre
+    </h1>
+</div>
+
+
+<nav style="padding: 0.5rem 0.75rem; font-size: 1.5rem;" role="navigation">
+    <div class="flex flex-wrap flex-center justify-start">
+        <!-- site header / name -->
 
         <!-- menu items -->
-        <ul class="ma0 pa0 inline-ul bare-list">
+        <ul class="ma0 pa0 wrapper inline-lis bare-list">
+            <!-- nav links -->
             {{ range site.Menus.main.ByWeight }}
             <li role="menuitem">
                 <a href="{{ absLangURL .URL }}" tabindex="{{ .Weight }}">{{ .Title }}</a>
             </li>
             {{ end }}
+
+            <!-- social links -->
+            <!--
+            <li role="menuitem">
+                <a href="https://www.github.com/pyre-project/" tabindex="120">
+                    GitHub&thinsp;{{ partial "images/external_link.html" }}
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="https://www.patreon.com/bePatron?u=91044262" tabindex="124">
+                    Patreon&thinsp;{{ partial "images/external_link.html" }}
+                </a>
+            </li>
+        -->
         </ul>
-
-        <!-- social links -->
-        <div class="dib h-100 mauto-left">
-            <a class="dib h-100 inline-svg bg-accent" href="https://github.com/pyre-project" target="_blank"
-                tabindex="100">
-                {{ partial "images/github.html" }}
-            </a>
-
-            <a class="dib h-100 inline-svg img-link" href="https://www.patreon.com/PyreProject" target="_blank"
-                tabindex="101">
-                {{ partial "images/patreon.html" }}
-            </a>
-        </div>
     </div>
 </nav>

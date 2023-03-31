@@ -1,8 +1,11 @@
 @import "colors.css";
 
 :root {
-    font-family: Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
+
+    --h1-size: 4rem;
+    --h2-size: 2.5rem;
 }
 
 .text {

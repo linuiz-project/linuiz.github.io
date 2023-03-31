@@ -1,7 +1,6 @@
 copyright = "@ {year} {title}"
 baseURL = "https://pyre-project.org/"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
 
 [languages]
     [languages.en]
