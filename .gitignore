@@ -11,6 +11,3 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
-
-# Ignore optional local-specific config file
-/config/_default/__local.toml

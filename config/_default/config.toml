@@ -1,0 +1,4 @@
+baseURL = "https://pyre-project.org/"
+copyright = "@ {year} {title}"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true

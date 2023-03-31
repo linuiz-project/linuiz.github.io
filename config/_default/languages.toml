@@ -1,0 +1,13 @@
+# English
+[en]
+    title = "Pyre Project"
+    languageName = "English"
+    contentDir = "content/en/"
+    weight = 10
+
+# Spanish
+[es]
+    title = "Proyecto de Pira"
+    languageName = "Español"
+    contentDir = "content/es/"
+    weight = 20
