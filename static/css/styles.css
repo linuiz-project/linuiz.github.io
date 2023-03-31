@@ -74,6 +74,16 @@ body {
     align-items: center;
 }
 
+.flex-nogrow {
+    flex-grow: 0;
+}
+
+.flex-auto-hr {
+    margin: 0 1rem;
+    max-width: 14rem;
+    flex-grow: 1;
+}
+
 .justify-start {
     justify-content: start;
 }

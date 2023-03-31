@@ -1,5 +1,5 @@
 +++
-title = "Home"
+title = "News"
 date = "2023"
 menu = "main"
 weight = 1

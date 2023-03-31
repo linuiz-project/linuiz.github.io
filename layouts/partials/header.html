@@ -17,12 +17,12 @@
 </div>
 
 
-<nav style="padding: 0.5rem 0.75rem; font-size: 1.5rem;" role="navigation">
-    <div class="flex flex-wrap flex-center justify-start">
-        <!-- site header / name -->
+<nav style="margin: 1.25rem 0; font-size: 1.5rem;" role="navigation">
+    <div class="flex flex-wrap flex-center justify-center">
+        <hr class="flex-auto-hr bg-accent" />
 
         <!-- menu items -->
-        <ul class="ma0 pa0 wrapper inline-lis bare-list">
+        <ul class="ma0 pa0 wrapper flex-nogrow inline-lis bare-list">
             <!-- nav links -->
             {{ range site.Menus.main.ByWeight }}
             <li role="menuitem">
@@ -44,5 +44,7 @@
             </li>
         -->
         </ul>
+
+        <hr class="flex-auto-hr bg-accent" />
     </div>
 </nav>
